@@ -9,7 +9,7 @@ First, install Tailwind to your app's UI codebase:
 yarn add tailwindcss && npx tailwindcss init
 ```
 
-Then, replace your new `tailwind.config.js` file with (our config file)[./tailwind.config.js] (or modify it as necessary).
+Then, replace your new `tailwind.config.js` file with [our config file](./tailwind.config.js) (or modify it as necessary).
 
 Next, add our `input.css` to the `src` folder (or modify your own to suit).
 
