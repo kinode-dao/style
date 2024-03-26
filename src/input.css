@@ -88,33 +88,6 @@
   }
 }
 
-
-/*
- * draggable file tree style overrides 
- */
-.rstcustom__node>div {
-  display: flex;
-}
-
-.rstcustom__expandButton,
-.rstcustom__collapseButton {
-  display: none;
-}
-
-.rstcustom__rowLabel {
-  flex-grow: 1 !important;
-}
-
-.rstcustom__rowWrapper,
-.rstcustom__row {
-  flex-grow: 1;
-}
-
-.rstcustom__rowWrapper:hover {
-  opacity: 1 !important;
-}
-
-
 body {
   @apply bg-[url('./assets/background.jpg')] bg-cover bg-no-repeat bg-center bg-fixed text-white;
 }
@@ -130,11 +103,6 @@ input[type="checkbox"] {
   @apply px-4 py-2 rounded-lg bg-orange bg-opacity-25 text-white border border-orange border-2;
 }
 
-input[type="text"],
-input[type="password"] {
-  @apply w-full;
-}
-
 input[type="checkbox"] {
   @apply w-6 h-6 cursor-pointer px-2 py-1;
 }
@@ -147,18 +115,9 @@ input[type="checkbox"]:checked {
   @apply absolute left-4 text-xl -top-1 cursor-pointer;
 }
 
-::placeholder {
-  @apply !text-white;
-}
-
-::-webkit-input-placeholder::placeholder {
-  @apply !text-white;
-}
-
-::-moz-placeholder::placeholder {
-  @apply !text-white;
-}
-
+::placeholder,
+::-webkit-input-placeholder::placeholder,
+::-moz-placeholder::placeholder,
 ::-ms-input-placeholder {
   @apply !text-white;
 }
