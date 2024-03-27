@@ -104,7 +104,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] {
-  @apply w-6 h-6 cursor-pointer px-2 py-1;
+  @apply w-2 h-2 cursor-pointer p-2;
 }
 
 input[type="checkbox"]:checked {
@@ -112,7 +112,7 @@ input[type="checkbox"]:checked {
 }
 
 .checkmark {
-  @apply absolute left-4 text-xl -top-1 cursor-pointer;
+  @apply absolute left-1 text-xl -top-1 cursor-pointer;
 }
 
 ::placeholder,
@@ -139,4 +139,8 @@ button:disabled {
 
 .obox {
   @apply rounded-lg p-4 bg-orange/25;
+}
+
+.c {
+  @apply place-items-center place-content-center;
 }
