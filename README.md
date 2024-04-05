@@ -32,6 +32,13 @@ Next, add our `index.css` (NOT `input.css`) to the `src` folder (or modify your 
 
 Then, add our `unocss.config.ts` file to the root of your project (or modify it as necessary).
 
+You'll also want to add the following two lines to your `main.tsx`:
+
+```ts
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
+```
+
 Finally, modify your `vite.config.ts`:
 
 ```ts
