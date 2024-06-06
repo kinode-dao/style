@@ -54,16 +54,17 @@ h6 {
 }
 
 button,
-button[type="submit"] {
-  @apply flex m-0 py-2 px-6 rounded border-orange bg-orange border-2 cursor-pointer place-items-center place-content-center text-center rounded-lg heading transition ease-in-out duration-100 hover:bg-black hover:text-white font-[OpenSans];
+button[type="submit"],
+.button {
+  @apply flex py-2 px-6 rounded border-orange bg-orange border-2 cursor-pointer place-items-center place-content-center text-center rounded-lg heading transition ease-in-out duration-100 hover:bg-black text-white font-[OpenSans];
 }
 
 .clear {
-  @apply bg-transparent border-transparent font-bold hover:bg-white/25;
+  @apply bg-transparent border-transparent font-bold font-[Barlow] hover:bg-white/25;
 }
 
 .alt {
-  @apply bg-white text-black border-white;
+  @apply bg-white text-black border-white hover:text-white;
 }
 
 .thin {
@@ -116,6 +117,7 @@ input[type="checkbox"]:checked {
 }
 
 select {
+  /* arrow image */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ffffff" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 1.25rem center;
@@ -130,7 +132,8 @@ button:disabled {
   @apply opacity-70 cursor-not-allowed bg-gray border-gray;
 }
 
-.obox {
+.obox,
+.card {
   @apply rounded-lg p-4 bg-orange/25;
 }
 
